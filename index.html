@@ -1,0 +1,413 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallagher Solar | Solar Installation in Lubbock, Texas</title>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14181c; --mut:#57616c; --line:#e2e6ec; --bg:#f8fafb; --panel:#fff;
+  --deep:#12283f; --deep2:#1d3b58; --acc:#2f6fbf; --acc2:#7fb4e3; --ok:#1f7a45;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Bitter,Georgia,serif;font-weight:700;line-height:1.16;letter-spacing:-.014em;text-wrap:balance}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.demobar{background:#0d1117;color:#e6edf3;font-size:12.5px;text-align:center;padding:8px 14px}
+.demobar b{color:#f0b13c}
+.urg{background:#8a1c1c;color:#fff;text-align:center;font-size:13.5px;padding:9px;font-weight:500}
+.urg a{color:#fff}
+nav{position:sticky;top:0;z-index:60;background:rgba(248,250,251,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+.logo{font-family:Bitter,serif;font-weight:700;font-size:19px}
+.logo span{color:var(--acc)}
+.navl{display:flex;gap:20px;font-size:14.5px;font-weight:500}
+.navl a{color:var(--mut);text-decoration:none}.navl a:hover{color:var(--deep2)}
+.navl a.on{color:var(--deep2);font-weight:700}
+.call{display:inline-flex;align-items:center;gap:8px;background:var(--deep2);color:#fff;text-decoration:none;font-weight:600;font-size:14.5px;padding:10px 17px;border-radius:8px;white-space:nowrap}
+@media(max-width:900px){.navl{display:none}}
+.hero{position:relative;background:linear-gradient(155deg,var(--deep),var(--deep2));color:#eef3f8;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;opacity:.13;
+  background:repeating-linear-gradient(78deg,transparent 0 38px,rgba(255,255,255,.55) 38px 40px),
+             repeating-linear-gradient(-12deg,transparent 0 38px,rgba(255,255,255,.3) 38px 39px)}
+.heroin{position:relative;z-index:2;display:grid;grid-template-columns:1.06fr .94fr;gap:42px;align-items:center;padding:56px 0 62px}
+@media(max-width:980px){.heroin{grid-template-columns:1fr;gap:28px;padding:38px 0 44px}}
+.eyeb{display:inline-block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--acc2);border:1px solid rgba(255,255,255,.28);padding:5px 12px;border-radius:999px;margin-bottom:17px}
+.hero h1{font-size:clamp(31px,5vw,48px);margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--acc2)}
+.hero .lede{font-size:17px;color:#c6d3df;max-width:520px}
+.ticks{list-style:none;margin-top:20px;display:grid;gap:9px}
+.ticks li{display:flex;gap:10px;font-size:15.5px;color:#dde6ee}
+.ticks svg{flex:0 0 18px;margin-top:4px;fill:var(--acc2)}
+.form{background:var(--panel);border-radius:14px;padding:24px;box-shadow:0 20px 54px rgba(0,0,0,.3);color:var(--ink)}
+.form h3{font-size:20px;margin-bottom:4px}
+.form .fs{font-size:13.5px;color:var(--mut);margin-bottom:14px}
+label{display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin:12px 0 5px}
+select,input{width:100%;font-family:inherit;font-size:15px;color:var(--ink);background:#fbfcfd;border:1px solid var(--line);border-radius:8px;padding:11px 12px}
+select:focus,input:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
+.chk{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chk label{display:inline-flex;align-items:center;gap:7px;margin:0;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#fbfcfd;font-size:13.5px;font-weight:500;letter-spacing:0;text-transform:none;color:var(--ink);cursor:pointer}
+.chk input{width:auto;padding:0;margin:0}
+.btn{width:100%;margin-top:18px;background:var(--acc);color:#fff;border:0;border-radius:9px;padding:14px;font-family:Bitter,serif;font-size:16px;font-weight:700;cursor:pointer}
+.btn:hover{filter:brightness(.88)}
+.hint{font-size:12px;color:var(--mut);margin-top:10px;text-align:center}
+.out{display:none;margin-top:15px;border-radius:10px;padding:15px 16px;font-size:14.5px;border:1px solid}
+.out.show{display:block}
+.out b{display:block;font-family:Bitter,serif;font-size:16.5px;margin-bottom:5px}
+.o-hi{background:#eef6f0;border-color:#bedcc6;color:#1d5734}
+.o-md{background:#fdf6ea;border-color:#ecdcb2;color:#775413}
+.o-lo{background:#f3f5f7;border-color:#dde2e7;color:#48515a}
+.o-urg{background:#fdeeee;border-color:#f0c6c4;color:#8a1c1c}
+.trust{background:#0e141a;color:#b6c2cd;padding:15px 0}
+.trustin{display:flex;flex-wrap:wrap;justify-content:center;gap:11px 34px;font-size:13.5px}
+.trustin b{color:var(--acc2);font-weight:700}
+section{padding:58px 0}
+.sh{text-align:center;max-width:680px;margin:0 auto 34px}
+.sh .kick{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:10px}
+.sh h2{font-size:clamp(25px,3.4vw,33px);margin-bottom:11px}
+.sh p{color:var(--mut);font-size:16.5px}
+.band{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:17px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.ctop{height:100px;position:relative;background:linear-gradient(140deg,var(--deep),var(--deep2))}
+.ctop::after{content:"";position:absolute;inset:0;opacity:.24;background:repeating-linear-gradient(78deg,transparent 0 15px,rgba(255,255,255,.5) 15px 16px)}
+.cbody{padding:17px}.cbody h3{font-size:18px;margin-bottom:6px}
+.cbody p{font-size:14.5px;color:var(--mut)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:24px}
+.box.pri{background:linear-gradient(160deg,var(--deep),var(--deep2));color:#eef3f8;border-color:var(--deep2)}
+.box h3{font-size:20px;margin-bottom:10px}
+.box ul{margin:0 0 0 19px;font-size:15px;color:var(--mut)}
+.box.pri ul{color:#c6d3df}
+.box li{margin-bottom:8px}
+.tagp{display:inline-block;font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:700;background:var(--acc2);color:#0e1a26;padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:16px}
+.fact{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
+.fact .k{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:7px}
+.fact .v{font-family:Bitter,serif;font-size:22px;font-weight:700;color:var(--deep2)}
+.fact .n{font-size:13.5px;color:var(--mut);margin-top:5px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:22px;counter-reset:s}
+.step{counter-increment:s;position:relative;padding-left:50px}
+.step::before{content:counter(s);position:absolute;left:0;top:0;width:37px;height:37px;border-radius:50%;background:var(--deep2);color:#fff;font-family:Bitter,serif;font-weight:700;font-size:17px;display:grid;place-items:center}
+.step h3{font-size:17.5px;margin-bottom:5px}.step p{font-size:14.5px;color:var(--mut)}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:17px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:20px}
+.stars{color:#e0a32e;font-size:15.5px;letter-spacing:2px}
+.rev p{font-size:14.8px;color:var(--mut);margin:9px 0 12px;font-style:italic}
+.rev .who{font-size:13.5px;font-weight:700}
+.rev .who span{display:block;font-weight:400;color:var(--mut);font-size:12.5px;margin-top:2px}
+.ratebar{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:28px;flex-wrap:wrap}
+.ratebig{font-family:Bitter,serif;font-size:42px;font-weight:700;color:var(--deep2)}
+.ratetxt{font-size:14.5px;color:var(--mut);text-align:left}
+.badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.bdg{background:var(--panel);border:1px dashed #b9c3d1;border-radius:11px;padding:14px 20px;text-align:center;min-width:140px}
+.bdg b{display:block;font-family:Bitter,serif;font-size:16px;color:var(--deep2)}
+.bdg span{font-size:11.5px;color:var(--mut);letter-spacing:.05em;text-transform:uppercase}
+.areas{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:20px}
+.areas span{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-size:14px;color:var(--mut)}
+.cta2{background:linear-gradient(155deg,var(--deep),var(--deep2));color:#eef3f8;text-align:center;padding:58px 0}
+.cta2 h2{font-size:clamp(25px,3.4vw,33px);margin-bottom:11px}
+.cta2 p{color:#c6d3df;font-size:16.5px;max-width:560px;margin:0 auto 22px}
+.cta2 .call{font-size:16px;padding:14px 26px;background:var(--acc2);color:#0e1a26}
+footer{background:#0b1016;color:#87929d;font-size:13.5px;padding:32px 0}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+footer h4{color:#e7edf3;font-size:12.5px;letter-spacing:.11em;text-transform:uppercase;margin-bottom:10px}
+footer a{color:#87929d;text-decoration:none;display:block;margin-bottom:6px}
+footer a:hover{color:var(--acc2)}
+.fnote{border-top:1px solid #1b232c;padding-top:18px;margin-top:20px;font-size:12.5px;color:#6b7681;line-height:1.65}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+</style>
+<style>
+:root{--deep:#0a0f07;--deep2:#2f6b1f;--acc:#f4b942}
+.hero{background:radial-gradient(1100px 620px at 76% 14%,rgba(244,185,66,.24),transparent 60%),linear-gradient(150deg,#0a0f07 0%,#16300f 50%,#2f6b1f 100%)}
+.hero::after{opacity:.05}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:13px}
+.gal div{aspect-ratio:4/3;border-radius:12px;border:1px dashed var(--acc);display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-size:13.5px;color:var(--mut);background:var(--panel)}
+.fillme{background:rgba(244,185,66,.10);border:1px dashed var(--acc);border-radius:10px;padding:13px 16px;margin:14px 0;font-size:14.5px;color:var(--ink)}
+.fillme b{color:var(--acc)}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:13px}
+.num{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 16px;text-align:center}
+.num b{display:block;font-size:30px;color:var(--acc);font-weight:800;line-height:1.1}
+.num span{display:block;font-size:13.5px;color:var(--mut);margin-top:6px}
+.faqs{max-width:820px;margin:0 auto}
+.faq{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:16px 18px;font-weight:600;font-size:16px;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;color:var(--acc);font-weight:400;line-height:1}
+.faq[open] summary::after{content:"\2212"}
+.faq p{padding:0 18px 16px;color:var(--mut);font-size:15px;margin:0}
+.cta2{background:linear-gradient(150deg,#0a0f07 0%,#16300f 52%,#2f6b1f 100%)}
+.roofbox{background:linear-gradient(135deg,rgba(47,107,31,.22),rgba(244,185,66,.10));border:1px solid var(--line);border-radius:14px;padding:26px}
+.callbar{display:none}
+@media(max-width:860px){
+ .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--acc);color:#241a02;align-items:center;justify-content:center;gap:10px;padding:14px;font-weight:800;font-size:17px;text-decoration:none;box-shadow:0 -4px 18px rgba(0,0,0,.35)}
+ body{padding-bottom:58px}
+}
+</style>
+
+<div class="demobar">This is a <b>concept website</b> built by AG1 Consulting for Gallagher Solar. It is not a live site, no form on it sends anywhere, and everything marked in yellow is a placeholder awaiting the company's own details.</div>
+
+<nav>
+  <div class="wrap navin">
+    <div class="logo">Gallagher <span>Solar</span></div>
+    <div class="navl">
+      <a href="#how" class="on">How It Works</a>
+      <a href="#roofers">For Roofers</a>
+      <a href="#work">Our Work</a>
+      <a href="#faq">FAQs</a>
+    </div>
+    <a class="call" href="#quote">Get a free assessment</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap heroin">
+    <div>
+      <div class="eyeb">Lubbock &amp; the South Plains &middot; Residential &amp; Commercial Solar</div>
+      <h1>Solar done by the installer, <em>not by a salesman on your doorstep.</em></h1>
+      <p class="lede">Gallagher Solar is a Lubbock company that installs solar and nothing else. No door-knockers, no
+      call centre, no national finance company deciding what goes on your roof. You deal with Keefe.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>Local to Lubbock &mdash; the owner is on your job</span></li>
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>Solar is all we do &mdash; we are not upselling you a roof</span></li>
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>Trusted by local roofers to do their customers' work</span></li>
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>We have capacity now &mdash; not a six-month waiting list</span></li>
+      </ul>
+    </div>
+
+    <form class="form" id="quote" onsubmit="return route(event)">
+      <h3>Six questions</h3>
+      <div class="fs">Enough for us to tell you honestly whether solar is worth it on your roof.</div>
+
+      <label for="prop">What kind of property?</label>
+      <select id="prop">
+        <option value="">Choose one&hellip;</option>
+        <option value="h">My own home</option>
+        <option value="c">A business premises</option>
+        <option value="a">Agricultural or rural property</option>
+        <option value="r">A rental property I own</option>
+      </select>
+
+      <label for="bill">Roughly what is your monthly electric bill?</label>
+      <select id="bill">
+        <option value="">Choose one&hellip;</option>
+        <option value="hi">More than $400</option>
+        <option value="hi">$250 to $400</option>
+        <option value="md">$150 to $250</option>
+        <option value="lo">Under $150</option>
+      </select>
+
+      <label for="roof">How old is the roof?</label>
+      <select id="roof">
+        <option value="">Choose one&hellip;</option>
+        <option value="new">Under 5 years, or recently replaced</option>
+        <option value="ok">5 to 15 years</option>
+        <option value="old">Over 15 years, or needs work</option>
+        <option value="dk">Not sure</option>
+      </select>
+
+      <label for="own">Do you own the property?</label>
+      <select id="own">
+        <option value="">Choose one&hellip;</option>
+        <option value="y">Yes</option>
+        <option value="n">No, I rent</option>
+      </select>
+
+      <label for="when">When are you looking to do it?</label>
+      <select id="when">
+        <option value="">Choose one&hellip;</option>
+        <option value="s">As soon as it makes sense</option>
+        <option value="s">In the next few months</option>
+        <option value="p">Researching for later this year</option>
+      </select>
+
+      <label for="ph">Name and phone number</label>
+      <input id="ph" placeholder="Name &middot; (806) 000-0000">
+
+      <button class="btn" type="submit">Get my free assessment</button>
+      <div class="hint">No obligation, and we will tell you if it is not worth doing.</div>
+      <div class="out" id="out"></div>
+    </form>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap trustin">
+    <div><b>Lubbock</b> based</div>
+    <div><b>Solar only</b></div>
+    <div><b>Owner</b> on site</div>
+    <div><b>Roofer</b> trusted</div>
+    <div><b>Capacity</b> now</div>
+  </div>
+</div>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">How it works</div>
+      <h2>Four steps, and you can stop at any of them</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Six questions</h3><p>Two minutes. We look at your bill and your roof.</p></div>
+      <div class="step"><h3>An honest assessment</h3><p>Including "not worth it", if that is the answer.</p></div>
+      <div class="step"><h3>A written proposal</h3><p>System size, production estimate and the full cost.</p></div>
+      <div class="step"><h3>We install it</h3><p>Our own crew, and we are there on the day.</p></div>
+    </div>
+    <div class="fillme">
+      <b>&#9888; Note for Keefe, not for visitors:</b> the sections a solar buyer looks for and that we have deliberately
+      left blank rather than invent are <b>your warranty terms, your finance or payment options, the panel and inverter
+      brands you install, your licence or certification details, and your typical timescale from signature to
+      switch-on.</b> Those five things are what turns this page from a brochure into a quote request.
+    </div>
+  </div>
+</section>
+
+<section class="band" id="roofers">
+  <div class="wrap">
+    <div class="roofbox">
+      <div style="font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:10px">For roofing contractors</div>
+      <h2 style="font-size:clamp(24px,3.3vw,32px);margin-bottom:12px">Your customer wants solar. You do not want the liability.</h2>
+      <p style="color:var(--mut);font-size:16.5px;margin-bottom:14px">We install solar for roofing companies across the
+      South Plains. <b>We do not sell roofs, we do not approach your customers for roofing work, and we are not going to
+      turn up in a competitor's truck next year.</b> You keep the relationship. We do the array.</p>
+      <p style="color:var(--mut);font-size:16.5px">If you have a customer asking about panels, send them this page or
+      call us directly.</p>
+      <div class="nums" style="margin-top:24px">
+        <div class="num"><b>Solar only</b><span>we will never quote a roof</span></div>
+        <div class="num"><b>Your name</b><span>stays on the job</span></div>
+        <div class="num"><b>Local</b><span>Lubbock, not a franchise</span></div>
+      </div>
+    </div>
+    <div class="fillme">
+      <b>&#9888; Note for Keefe:</b> this section exists because roofers are where your work comes from, and right now
+      there is nothing for them to forward. <b>A page a roofer can send makes them look good and costs you nothing.</b>
+      Add your referral arrangement here if you want it stated publicly, or leave it as a conversation.
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">Our work</div>
+      <h2>Installs around Lubbock</h2>
+    </div>
+    <div class="gal">
+      <div>Your photo of a finished roof array</div>
+      <div>Your photo of a commercial or agricultural install</div>
+      <div>Your photo of the crew on site</div>
+      <div>Your photo of the inverter and meter set-up</div>
+    </div>
+    <div class="fillme">
+      <b>&#9888; Note for Keefe:</b> all four are placeholders, on purpose. <b>We found no photographs of your work
+      anywhere publicly accessible</b>, and we will not put stock photos of somebody else's panels on your page. Four
+      phone photos of your own installs, with the town named under each, would carry this page on their own.
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">Why us</div>
+      <h2>What makes a local installer different</h2>
+    </div>
+    <div class="two">
+      <div class="box pri">
+        <div class="tagp">Gallagher Solar</div>
+        <h3>A Lubbock installer</h3>
+        <ul>
+          <li>The owner looks at your roof and is there on install day</li>
+          <li>Solar is the only thing we sell you</li>
+          <li>We are here next year if something needs looking at</li>
+          <li>Capacity now, so you are not waiting months</li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="tagp">The alternative</div>
+        <h3>A national sales operation</h3>
+        <ul>
+          <li>A commissioned salesperson you never see again</li>
+          <li>Subcontracted crews from out of town</li>
+          <li>Finance terms set by a third party</li>
+          <li>A service call routed through a call centre</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">Straight answers</div>
+      <h2>What people ask before they book</h2>
+    </div>
+    <div class="faqs">
+      <details class="faq"><summary>Will you tell me if solar is not worth it on my house?</summary><p>Yes. A shaded or awkward roof is a bad job for you and for us. We would rather say so.</p></details>
+      <details class="faq"><summary>My roof is old. Should I do that first?</summary><p>Usually yes &mdash; it is far cheaper than taking an array off and putting it back. Tell us on the form and we will be straight with you.</p></details>
+      <details class="faq"><summary>Do you do the work yourselves?</summary><p>Yes. Our own crew, with the owner on site.</p></details>
+      <details class="faq"><summary>What does it cost?</summary><p>It depends on the system size your roof and your bill call for. You get a written proposal with the full cost before you commit. <i>(Concept note: Gallagher Solar to confirm any finance or payment options here.)</i></p></details>
+      <details class="faq"><summary>What warranty comes with it?</summary><p><i>(Concept note: Gallagher Solar to state its own workmanship warranty and the manufacturer warranties on the equipment it installs.)</i></p></details>
+      <details class="faq"><summary>How soon could you start?</summary><p>We have capacity at the moment, which is not true of everyone. Ask us and we will give you a real date.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta2">
+  <div class="wrap">
+    <h2>Six questions. A straight answer. No doorstep salesman.</h2>
+    <p>Gallagher Solar &mdash; Lubbock, Texas.</p>
+    <a class="call" href="#quote">Get a free assessment</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h4>Gallagher Solar</h4><a href="#top">Lubbock, Texas</a><a href="#quote">Request an assessment</a></div>
+      <div><h4>What we do</h4><a href="#how">Residential solar</a><a href="#how">Commercial &amp; agricultural</a></div>
+      <div><h4>Partners</h4><a href="#roofers">For roofing contractors</a></div>
+      <div><h4>Company</h4><a href="#work">Our work</a><a href="#faq">FAQs</a></div>
+    </div>
+    <div class="fnote">
+      <b>Concept demonstration &mdash; not a live website.</b> This page was produced by AG1 Consulting to show Gallagher
+      Solar what a website could look like. <b>No form on this page submits anywhere and nobody will be contacted.</b> The
+      company name, the Lubbock location and the owner's name are taken from the business's own BBB profile; the
+      description of its work as solar installation, its route to work through roofing contractors and its current spare
+      capacity are as reported to AG1. <b>Deliberately, no telephone number or email address appears anywhere on this
+      page, because two different telephone numbers for this business are currently published online and we have not
+      established which is correct.</b> <b>Everything else &mdash; the six questions, the four steps, the roofing-contractor
+      section, the comparison table and every FAQ answer &mdash; is illustrative copy written by AG1 and has not been
+      confirmed with the business.</b> <b>No price, saving, payback period, energy production figure, tax credit,
+      incentive, rebate, finance option, warranty, guarantee, timescale, licence, certification, insurance or equipment
+      brand is stated, promised or implied anywhere on this page</b>, and the statements about capacity and start dates
+      are illustrative wording for the business to confirm or remove, not a commitment. <b>No customer review, rating,
+      testimonial or photograph of any completed installation appears on this page, and none has been invented</b>; the
+      gallery tiles are empty placeholders. The comparison with "a national sales operation" describes a general industry
+      pattern and is not a statement about any identifiable company. Nothing here is a quotation, an offer, or financial,
+      tax or energy advice. Company and product names are used for identification only and belong to their respective
+      owners.
+    </div>
+  </div>
+</footer>
+
+<script>
+function route(e){
+  e.preventDefault();
+  var p=document.getElementById('prop').value, b=document.getElementById('bill').value,
+      r=document.getElementById('roof').value, o=document.getElementById('own').value,
+      w=document.getElementById('when').value, out=document.getElementById('out'), res;
+  if(!p||!b||!r||!o||!w){ res=['o-lo','Nearly there','Answer all six so we can give you a straight answer.']; }
+  else if(o==='n'){ res=['o-lo','You will need the owner','Solar needs the property owner to agree. Pass this on to them and we will help.']; }
+  else if(b==='lo'){ res=['o-md','Worth a proper look before you spend','On a smaller bill the numbers are tighter. We will tell you honestly either way.']; }
+  else if(r==='old'){ res=['o-md','The roof comes first','Better to sort the roof before an array goes on it. We will talk you through the order.']; }
+  else if(b==='hi'){ res=['o-hi','This is exactly the sort of job that works','A high bill and a sound roof. Expect a call to arrange the assessment.']; }
+  else { res=['o-md','Thanks &mdash; we have what we need','We will call to arrange your free assessment.']; }
+  out.className='out show '+res[0];
+  out.innerHTML='<b>'+res[1]+'</b>'+res[2]+'<span style="display:block;margin-top:8px;opacity:.85">Demonstration only &mdash; this is how an enquiry would be sorted before anyone drives out to a roof.</span>';
+  out.scrollIntoView({behavior:'smooth',block:'nearest'});
+  return false;
+}
+</script>
+
+<a class="callbar" href="#quote">Get a free assessment</a>
